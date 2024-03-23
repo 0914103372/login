@@ -29,17 +29,17 @@ fetch(loginApi, {
         alert("Đăng nhập thành công");
         check()
         console.log(res);
+        render();
       }
       else
         alert("Đăng nhập thất bại");
+        let title = formlogin.querySelector('.title')
+        title.innerHTML = 'LOGIN'
     })
     .catch((err) => {
       alert("Đăng nhập thất bại");
       console.log(err);
     })
-    .finally(() => {
-      render();
-    });
 })
 //kiem tra trang thai da dang nhap hay chua
 check()
@@ -107,6 +107,9 @@ rgt.querySelector('.buttoni').addEventListener('click',()=>{
       console.log(res.status)
       if (res.status == 200) {
         alert("Đăng ky thành công");
+        rgt.style.display =`none`
+        formlogin.style.display =`flex`
+        // vi bi loi nen de 2 cai nay vao  finally
       }
       else
         alert("Đăng ký thất bại");
