@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://i.pinimg.com/originals/e1/94/ed/e194ede516b88c41eaeba1088b12296b.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0px;
+    border-bottom: 2px;
+    border-color: #ffffff;
+    border-style: solid;
+}
+.textheader{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    letter-spacing: 5px;
+    padding-left: 20px;
+    
+}
+.buttonlogin{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 20px;
+    width: 120px;
+    padding: 5px 0;
+    background-color: #80808033;
+    text-align: center;
+    margin-right: 20px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+}
+.loginctn{
+    width: 500px; 
+    height: 500px;
+    background-color:rgba(86, 171, 245, 0);
+    border: 2px;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    opacity: 1;
+    animation: hienlen 0.5s ;
+}
+.registerctn{
+    width: 500px; 
+    height: 500px;
+    background-color:rgba(86, 171, 245, 0);
+    border: 2px;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    opacity: 1;
+    animation: hienlen 0.5s;
+}
+@keyframes hienlen{
+    from{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.title{
+    font-size: 40px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ 
+    letter-spacing: 10px;
+}
+
+input{
+ width: 300px;
+ height: 40px;
+
+ background-color: rgba(65, 81, 95,0);
+ border-color: aliceblue;
+font-weight: 600;
+}
+.input{
+    margin-top: 40px;
+}
+.text{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.buttoni{
+    margin-top: 20px;
+    width: 120px;
+    border: 1px;
+    padding: 5px 0;
+    font-size: 20px;
+    color: rgb(246, 246, 247);
+    border-color: aliceblue;
+    border-radius: 20px;
+    text-align: center;
+    border-style: solid;
+}
+.button{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.none{
+    display: block;
+  
+}
+.logout{
+    display: none;
+    margin-left: 85px;
+}
+.error{
+    border-color: red;
+}
